@@ -3,7 +3,7 @@
 
 
 var inputField = document.getElementById('password');
-var digit = 10;
+var digit = 12;
 
 
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -18,12 +18,12 @@ function createPassword(){
     
  
     var password = "" ;
-    password += upperCase[Math.floor(Math.random()* upperCase.length)];
-    password += lowerCase[Math.floor(Math.random()* lowerCase.length)];
-    password += number[Math.floor(Math.random()* number.length)];
-    password += symbol[Math.floor(Math.random()* symbol.length)];
+    // password += upperCase[Math.floor(Math.random()* upperCase.length)];
+    // password += lowerCase[Math.floor(Math.random()* lowerCase.length)];
+    // password += number[Math.floor(Math.random()* number.length)];
+    // password += symbol[Math.floor(Math.random()* symbol.length)];
 
-for(var i = 4; i < digit; i++){
+for(var i = 0; i < digit; i++){
     password += allChar[Math.floor(Math.random()* allChar.length)];
     
 }
